@@ -1,3 +1,6 @@
+- gcc file.c
+- .\a.exe
+
 --> 2nd dec, 2025
 
 arithmetic expression can be represented by 3 equivalent form which produces the same output :_
@@ -11,10 +14,11 @@ perform B operator A
 push result to stack 
 result in stack 
 
-example :-
-qno.1 postfix 23*54*+9- ( left to right garne associativity )
+## example :-
 
-symbol   stack    opr
+### qno.1 postfix 23*54*+9- ( left to right garne associativity )
+
+symbol  | stack   | opr
 2        2       push(2)
 3        2 3     push (3)
 *        6       pop(3 &2), opr=3*2=6,push 6 
@@ -27,9 +31,9 @@ symbol   stack    opr
 
 postfix ma garda initial ma j cha tei number gara left to right her 
 
-qno.2 prefix -+*23*549 ( right to left )
+### qno.2 prefix -+*23*549 ( right to left )
 
-symbol     stack        opr
+symbol  |   stack    |    opr
 9           9        push(9)
 4           4  9     push (4)
 5           5 4 9    push (5)
@@ -42,10 +46,10 @@ symbol     stack        opr
 
 prefix ma garda initial chai last ma lekha stack jastai hoss bhanera 
 
-top-bottom in prefix 
-bottom - top in postfix 
+- top-bottom in prefix 
+- bottom - top in postfix 
 
-steps of turning infix to postfix conversion ( IMPORTANT )
+## steps of turning infix to postfix conversion ( IMPORTANT )
 
 1. operator should be pushed to stack 
 2. operand should be added to postfix expr
@@ -53,8 +57,9 @@ steps of turning infix to postfix conversion ( IMPORTANT )
 4. if an operator with lower precedence comes in top of the operator with higher preecedence, then pop the operator with higher precedence and add to postfix expr and then add the other operator to stack.
 5. no two operators with same prcedence can stay together. 
 
-example :- 
-qno.1 A + B * C - 
+## example :- 
+
+### qno.1 A + B * C - 
 
 symbol       stack         postfix    opr
 A          (-) dash ntg     A
@@ -65,7 +70,7 @@ C           +*              ABC
 -           -               ABC*
                             ABC**
 
-qno.2 (A+B/C*(D+E)-F)
+### qno.2 (A+B/C*(D+E)-F)
 
 symbol     stack    postfix
 (
@@ -84,7 +89,7 @@ E
 F
 )
 
-steps to turn infix to prefix ( syllabus ma chaina but may come so )
+## steps to turn infix to prefix ( syllabus ma chaina but may come so )
 
 1. reverse the given expression 
 2. find postfix 
