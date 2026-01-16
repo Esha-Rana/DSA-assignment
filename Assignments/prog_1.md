@@ -1,12 +1,12 @@
 # Balanced parentheses checker using stack in C
 
-## a. How the data structure4s are defined
+## a. How the data structures are defined
 This program checks whether a given mathematical expression has balanced parentheses (including (), {}, and []) using a stack data structure. The program pushes opening brackets onto a stack and pops them when closing brackets appear to verify proper matching.
 
 ### Explanation
 - `stack[MAX]`: An array of characters used to store opening brackets temporarily.
 - `top`: An integer that tracks the index of the top element in the stack.
-    `top = -1` → stack is empty
+    `top = -1` → stack is empty, 
     `top = MAX - 1` → stack is full
 - Last-In-First-Out (LIFO) principle is followed.
 
@@ -36,6 +36,7 @@ This program checks whether a given mathematical expression has balanced parenth
 - At the end, if the stack is empty, the expression is considered balanced and returns 1.
 
 ---
+
 ## c. Overview of `main()`
 The `main()` function manages the overall execution of the program. It performs the following steps:
 
