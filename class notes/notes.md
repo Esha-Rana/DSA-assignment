@@ -14,6 +14,15 @@ perform B operator A
 push result to stack 
 result in stack 
 
+## Operator precedence 
+
+^    higher
+*/   medium
++-   lower
+
+same category ko precedence ho bhane chai sangai narakhne pop gardihalne 
+
+
 ## example :-
 
 ### qno.1 postfix 23*54*+9- ( left to right garne associativity )
