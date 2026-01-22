@@ -8,12 +8,12 @@ This program demonstrates **reverse traversal** of a singly linked list using **
   - `data` → the value stored in the node.  
   - `next` → pointer to the next node.
 
-``c
+```c
 struct Node {
     int data;           // Stores the value of the node
     struct Node *next;  // Pointer to the next node in the list
 };
----
+```
 
 ## (b) Functions Implemented
 
