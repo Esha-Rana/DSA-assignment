@@ -50,7 +50,7 @@ It uses **recursion** (stack concept).
 
 Example DFS order:
 `0 → go deep to one neighbor → keep going deeper → backtrack when stuck`
----
+
 
 ### 5)Program Features
 - Input number of vertices (`n`)
