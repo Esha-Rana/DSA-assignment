@@ -39,4 +39,3 @@ For an element stored at index `i`:
 - `buildMaxHeap(int arr[], int n)` – builds Max Heap
 - `buildMinHeap(int arr[], int n)` – builds Min Heap
 - `printHeap(int arr[], int n)` – prints heap elements
-

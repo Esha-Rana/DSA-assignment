@@ -7,7 +7,6 @@ void swap(int *a, int *b) {
     *b = temp;
 }
 
-// Heapify function for Max Heap
 void maxHeapify(int arr[], int n, int i) {
     int largest = i;
     int left = 2 * i + 1;
@@ -25,7 +24,6 @@ void maxHeapify(int arr[], int n, int i) {
     }
 }
 
-// Heapify function for Min Heap
 void minHeapify(int arr[], int n, int i) {
     int smallest = i;
     int left = 2 * i + 1;
@@ -43,13 +41,11 @@ void minHeapify(int arr[], int n, int i) {
     }
 }
 
-// Build Max Heap
 void buildMaxHeap(int arr[], int n) {
     for (int i = (n / 2) - 1; i >= 0; i--)
         maxHeapify(arr, n, i);
 }
 
-// Build Min Heap
 void buildMinHeap(int arr[], int n) {
     for (int i = (n / 2) - 1; i >= 0; i--)
         minHeapify(arr, n, i);
